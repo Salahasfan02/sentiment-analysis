@@ -2,7 +2,7 @@ import pandas as pd
 import re
 from nltk.sentiment import SentimentIntensityAnalyzer
 import matplotlib
-matplotlib.use('TkAgg')  # or 'Qt5Agg' depending on your environment
+matplotlib.use('TkAgg')  
 import matplotlib.pyplot as plt
 import nltk
 
