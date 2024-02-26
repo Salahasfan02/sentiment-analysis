@@ -8,7 +8,7 @@ import nltk
 
 # Download VADER lexicon
 nltk.download('vader_lexicon')
-
+#File path
 FilePath = 'C:\\Users\\satan\\OneDrive\\Desktop\\Data_analysis\\Reviews.csv'
 
 # Read the dataset
@@ -17,10 +17,12 @@ df = pd.read_csv(FilePath)
 print("Top Rows")
 print(df.head())
 
+#Checking the empty cells using isnull
 EmptyCells = df.isnull().sum()
 print("Empty Cells")
 print(EmptyCells)
 
+#Clean the empty cells by deleting it using dripna
 df_cleaned = df.dropna()
 print("Data after cleaning")
 print(df_cleaned)
