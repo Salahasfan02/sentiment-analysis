@@ -22,7 +22,7 @@ EmptyCells = df.isnull().sum()
 print("Empty Cells")
 print(EmptyCells)
 
-#Clean the empty cells by deleting it using dripna
+#Clean the empty cells by deleting it using dropna
 df_cleaned = df.dropna()
 print("Data after cleaning")
 print(df_cleaned)
